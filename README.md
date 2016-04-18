@@ -6,7 +6,8 @@ Code of IJCAI2016: "Knowledge Representation Learning with Entities, Attributes 
 
 
 
-===== DATA =====
+DATA
+==============
 
 I provide FB24k  datasets used for the task of knowledge base completion with the input format of my code in data.zip.
 
@@ -38,19 +39,15 @@ Dataset contains six files:
 
 
 
-===== CODE =====
-
-In the folder KR-EAR(TransE)/, KR-EAR(TransR)/.
-
-
-
-===== COMPILE =====
+COMPILE
+==============
 
 Just type make in the folder ./
 
-===== RUN =====
+RUN
+==============
 
-You can also change the parameters when running Train_TransE, Train_TransR, Train_CTransR.
+You can also change the parameters when running.
 
 -n : the embedding size of entities, relations
 
