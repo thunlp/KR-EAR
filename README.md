@@ -7,7 +7,7 @@ Code of IJCAI2016: "Knowledge Representation Learning with Entities, Attributes 
 
 
 DATA
-==============
+==========
 
 I provide FB24k  datasets used for the task of knowledge base completion with the input format of my code in data.zip.
 
@@ -40,12 +40,12 @@ Dataset contains six files:
 
 
 COMPILE
-==============
+==========
 
 Just type make in the folder ./
 
 RUN
-==============
+==========
 
 You can also change the parameters when running.
 
