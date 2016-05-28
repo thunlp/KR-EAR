@@ -801,13 +801,13 @@ void prepare()
 	}
 	fclose(f_env);
 	FILE* f_val = fopen("../data/val2id.txt","r");
-	while (fscanf(f_env,"%s%d",buf,&x)==2)
+	while (fscanf(f_val,"%s%d",buf,&x)==2)
 	{
 		string st=buf;
 		val2id[st]=x;
 		val_num++;
 	}
-	fclose(f_env);
+	fclose(f_val);
 	attribute_val.resize(relation_num);
 	entity_attr_val.resize(entity_num);
 //	cout<<"here"<<endl;
