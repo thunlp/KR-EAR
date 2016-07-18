@@ -106,7 +106,9 @@ You can also change the parameters when training.
 
 
 
-==CITE==
+CITE
+==========
+
 
 If you use the code, please kindly cite the following paper:
 
