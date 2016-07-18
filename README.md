@@ -1,16 +1,24 @@
 # KR-EAR
 Code of IJCAI2016: "Knowledge Representation Learning with Entities, Attributes and Relations"
 
+Evaluation Results
+==========
 
+Evaluation results on entity prediction.
 
-
+| Model      |     MeanRank(Raw) |   MeanRank(Filter)   |	Hit@10(Raw)	| Hit@10(Filter)|
+| :-------- | --------:| :------: | :------: |:------: |
+| TransE 			| 259		| 200		| 35.8	| 53.0 |
+| TransH			| 282		| 224		| 33.9	| 50.2 |
+| TransR 			| 260		| 200		| 37.0	| 56.1 |
+| KR-EAR(TransE)	| 186		| 133		| 38.5	| 54.5 |	
+| KR-EAR(TransR)	| 172		| 118		| 39.5	| 57.3 |
 
 
 DATA
 ==========
 
-I provide FB24k  datasets used for the task of knowledge base completion with the input format of my code in data.zip.
-
+We provide FB24k dataset used for the task knowledge base completion in data.zip, using the input format required by our codes. 
 
 
 Datasets are needed in the folder data/ in the following format
@@ -47,7 +55,19 @@ Just type make in the folder ./
 RUN
 ==========
 
-You can also change the parameters when running.
+You need to  type the following command in each model folder:
+
+For training:
+
+	./main
+
+For testing:
+
+	./test
+
+	./test_attr
+
+You can also change the parameters when training.
 
 -n : the embedding size of entities, relations
 
@@ -64,6 +84,6 @@ You can also change the parameters when running.
 
 ==CITE==
 
-If you use the code, you should cite the following paper:
+If you use the code, please kindly cite the following paper:
 
 Yankai Lin, Zhiyuan Liu, Maosong Sun. Knowledge Representation Learning with Entities, Attributes and Relations. International Joint Conference on Artificial Intelligence (IJCAI 2016).
